@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <p>Logged in as: <strong>Nicolas Ansell </strong><a href="login.html">Logout</a></p>
+        <h1><span>Don't Skip</span> The Dishes</h1>
+    </header>
+    <div class="container page-listing">
+            <form action="recipe-list.html">
+            <h2>New Recipe</h2>
+            <div class="add-recipe-card tstyle">
+                <div class="add-recipe-lhs">
+                    <ul>
+                        <li>
+                            <label for="title">Recipe Title:</label>
+                            <input type="text" id="title" placeholder="Enter recipe title"/>
+                        </li>
+                        <li>
+                            <label for="time">Time To Make:</label>
+                            <input type="text" id="time" placeholder="Enter Time to Make"/>
+                        </li>
+                        <li>
+                            <label for="difficulty">Difficulty</label>
+                            <select id="difficulty" placeholder="Enter recipe Difficulty">
+                                <option value="">Please choose an option</option>
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="upload-recipe-image" class="upload-recipe-image">Upload Recipe Image</label>
+                            <input type="file" name="upload-recipe-image" id="upload-recipe-image"/>
+                        </li>
+                        <li>
+                            <img src="images/food-default.png" alt="food-image" class="food-image">
+                        </li>
+                      
+                        
+                    </ul>
+                </div>
+                <div class="add-recipe-rhs">
+                    <ul>
+                        <li>
+                            <label for="title">Recipe Description</label>
+                            <textarea name="description" id="description" cols="30" rows="10" placeholder="Write a description for your recipe..."></textarea>
+                        </li>
+                        <li>
+                            <label for="title">Recipe Instructions</label>
+                            <textarea name="instructions" id="instructions cols="30" rows="10" placeholder="Write down the instructions for your recipe..."></textarea>
+                        </li>
+                        <li>
+                            <label for="">Recipe Ingredients</label>
+                            <textarea name="ingredients" id="ingredients" cols="30" rows="10" placeholder="List the ingredients for your recipe..."></textarea> 
+                        </li>
+                      
+                        
+                    </ul>
+                </div>
+                <div class="add-recipe-bot">
+                    <ul>
+                        <li>
+                            <button type="submit">Post Recipe</button> 
+                        </li>
+                    </ul>
+                </div>
+                </div>  
+        </div> 
+</body>
+</html>

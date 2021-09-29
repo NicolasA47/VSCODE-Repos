@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class = "container top-spacer" id="signup">
+    
+    <div class="default-div" id="back">
+        <p><a href="login.html"> Go Back </a></p>
+    </div>
+
+    <form action="login.html">
+    <h1>Sign Up</h1>
+        <ul>
+            <li>
+                <label for="email">Email</label>
+            </li>
+            <li>
+                <input type="email" id="email" placeholder="Enter email"/>
+            </li>
+            <li>
+                <label for="password">Password</label> 
+            </li>
+            <li>
+                <input type="password" id="password" placeholder="Enter password"/> 
+            </li>
+            <li>
+                <label for="confirm-password">Confirm Password</label> 
+            </li>
+            <li>
+                <input type="password" id="confirm-password" placeholder="Enter password again"/> 
+            </li>
+            <li>
+                <label for="date">Birthday</label>
+            </li>
+            <li>
+                <input type="date" id="birtday"/>
+            </li>
+
+            <li>
+                <label for="file-upload" class="custom-file-upload">
+                    Upload Image
+                </label>
+            </li>
+            <li>
+                <input id="file-upload" type="file"/>
+            </li>
+            <li >
+                <img src="images/pfp.png" alt="profile-pic" id="pfp"/>
+            </li>
+            <li>
+                <button type="submit">Sign Up</button> 
+            </li>
+            
+        </ul>
+    </div>
+      
+    </body>
+</html>

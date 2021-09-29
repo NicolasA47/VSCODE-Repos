@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+    <body>
+        <header>
+            <p>Logged in as: <strong>Nicolas Ansell </strong><a href="login.html">Logout</a></p>
+            <h1><span>Don't Skip</span> The Dishes</h1>
+        </header>
+        <div class="container page-listing tstyle">
+            <div class="recipe-list">
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <div class="recipe-rating">
+                            <span class="rating"><h2><img class="star" src="images/star-fill.svg" alt="Star"/> 4.8</h2></span>
+                        </div>
+                        <div class="recipe-image">
+                        <a href="recipe-page.html">
+                        <img class="recipe-img" src="images/chicken-parm.jpg" alt="chicken-parm"/>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="recipe-title">
+                    
+                    <a href="recipe-page.html"><h2 class="recipe-h2">Chicken Parm<span class="recipe-time"><img class="clock"src="images/clock-fill.svg" alt="clock"> 45 mins</span></h2></a>
+                    </div>
+                    <div class="recipe-desc">
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi sit qui molestiae quasi perferendis dolorem at non, inventore autem. 
+                            Quaerat, culpa? Quibusdam impedit consectetur id dicta natus quia! Harum laborum illum molestiae voluptatibus 
+                            tempore molestias tenetur sint, fugiat reprehenderit consectetur quisquam illo incidunt quae odio libero ea! Rem, laborum deserunt?
+                            tempore molestias tenetur sint, fugiat reprehenderit consectetur quisquam illo incidunt quae odio libero ea! Rem, laborum deserunt?
+                            ctetur id dicta natus quia! Harum laborum illum molestiae voluptatibus 
+                      
+                            
+                        </p>
+                    </div>
+                    <div class="recipe-profile">
+                        <img class="recipe-pfp" src="images/john-doe.png" alt=""/>
+                        <h4 class="profile-name">John Doe</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-page-card">
+                <ul>
+                    <li>
+                        <label for="ingredients">Instructions</label>
+                        <textarea name="ingredients" id="ingredients" cols="30" rows="10" readonly>      
+                        -Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quibusdam itaque beatae assumenda. Voluptas illum tempore illo, explicabo corrupti.
+                        
+                        -Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quibusdam itaque beatae assumenda. Voluptas illum tempore illo, explicabo corrupti.
+                        
+                        -Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quibusdam itaque beatae assumenda. Voluptas illum tempore illo, explicabo corrupti.
+                        
+                        -Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quibusdam itaque beatae assumenda. Voluptas illum tempore illo, explicabo corrupti.
+                        </textarea>
+                    </li>
+                    <li>
+                        <label for="ingredients">Ingredients</label>
+                        <textarea name="ingredients" id="" cols="30" rows="10" readonly>      
+                            For The Chicken:
+
+                            2 large eggs
+                            1 tablespoon minced garlic
+                            2 tablespoons fresh chopped parsley
+                            Salt and pepper to season
+                            3 large chicken breasts halved horizontally to make 6 fillets
+                            1 cup Panko breadcrumbs
+                            1/2 cup breadcrumbs (Italian or golden)
+                            1/2 cup fresh grated parmesan cheese
+                            1 teaspoon garlic or onion powder
+                            1/2 cup olive oil for frying
+                            For The Sauce:
+                            1 tablespoon olive oil
+                            1 large onion chopped
+                            2 teaspoons minced garlic
+                            14 ounces (400 g) tomato puree (Passata)
+                            Salt and pepper to taste
+                            1 teaspoon dried Italian herbs
+                            
+                            Sponsored by Advertising Partner
+                            Sponsored Video
+                            Watch to learn more
+                            SEE MORE
+                            1 teaspoon sugar (optional)
+                            For The Topping:
+                            8 ounces (250 g) mozzarella cheese sliced or shredded
+                            1/3 cup fresh shredded parmesan cheese
+                            2 tablespoons fresh chopped basil or parsley
+                        
+                        </textarea>
+                    </li>
+                    <li>
+                        <form action="recipe-list.html">
+                            <label for="rating">Rating:</label>
+                            <select name="rating" id="rate">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <button type="submit">Rate Recipe</button> 
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
