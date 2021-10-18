@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe List</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="js/script.js"></script>
 </head>
     <body>
         <header>
@@ -17,7 +18,7 @@
                 <div class="recipe-card">
                     <div class="recipe-image">
                         <div class="recipe-rating">
-                            <span class="rating"><h2><img class="star" src="images/star-fill.svg" alt="Star"/> 4.8</h2></span>
+                            <span class="rating"><img class="star" src="images/star-fill.svg" alt="Star"/> 4.8</span>
                         </div>
                         <div class="recipe-image">
                         <a href="recipe-page.html">
@@ -27,7 +28,7 @@
                     </div>
                     <div class="recipe-title">
                     
-                    <a href="recipe-page.html"><h2 class="recipe-h2">Chicken Parm<span class="recipe-time"><img class="clock"src="images/clock-fill.svg" alt="clock"> 45 mins</span></h2></a>
+                    <a href="recipe-page.html"><h2 class="recipe-h2">Chicken Parm<span class="recipe-time"><img class="clock" src="images/clock-fill.svg" alt="clock"> 45 mins</span></h2></a>
                     </div>
                     <div class="recipe-desc">
                         <p> 
@@ -67,7 +68,7 @@
                     </li>
                     <li>
                         <label for="ingredients">Ingredients</label>
-                        <textarea name="ingredients" id="" cols="30" rows="10" readonly>      
+                        <textarea name="ingredients" id="ings" cols="30" rows="10" readonly>      
                             For The Chicken:
 
                             2 large eggs
@@ -102,15 +103,15 @@
                     </li>
                     <li>
                         <form action="recipe-list.html">
-                            <label for="rating">Rating:</label>
-                            <select name="rating" id="rate">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                            <button type="submit">Rate Recipe</button> 
+                            <label for="starRatingSub">Rating:</label>
+                             <div id="starRatingBox">
+                                 <input type="image" id="starRatingSub" src="images/dash-lg.svg" alt="minus" onclick="countRating(0, 'starRating')">
+                                <span id="starRating">3</span>
+                                <input type="image" id="starRatingAdd" src="images/plus-lg.svg" alt="plus" onclick="countRating(1, 'starRating')">
+                             </div>
+                             <div>
+                                <button type="submit">Rate Recipe</button> 
+                            </div>
                         </form>
                     </li>
                 </ul>

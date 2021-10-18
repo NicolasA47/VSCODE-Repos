@@ -78,6 +78,7 @@ span{
 
 .container form label {
   margin: 5px 10px 5px 0;
+  font-weight: bold;
   min-width: 200px;
   width:100%;
 }
@@ -130,6 +131,8 @@ button:hover {
   width: 100px;
   height: auto;
 }
+
+
 .custom-file-upload{
     background: var(--secondary);
     border-radius: 5px;
@@ -289,6 +292,7 @@ input:focus,textarea:focus,select:focus{
 
 .recipe-rating{
   text-align: center;
+  padding: 10px;
 }
 
 .recipe-desc{
@@ -451,5 +455,41 @@ ul{
   list-style: none;
 }
 
+.invalid::placeholder{
+  color: rgb(255, 32, 32);
+}
 
+
+
+.invalid:focus{
+  color: white;
+}
+.hidden{
+  display: none;
+}
+
+.errorMsg{
+  outline: none;
+  margin: 0px;
+  font-size: 14px;
+  color: rgb(230, 62, 62);
+}
+.red-outline{
+  outline: 1px solid rgba(238, 55, 55, 0.568);
+}
+
+.char{
+  font-size: 12px;
+}
+
+#starRatingBox{
+  font-size: 28px;
+  display: inline;
+}
+#starRatingSub{
+  width: 15px;
+}
+#starRatingAdd{
+  width: 15px;
+}
 

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe List</title>
+    <title>Recipe Creator</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -13,35 +14,35 @@
         <h1><span>Don't Skip</span> The Dishes</h1>
     </header>
     <div class="container page-listing">
-            <form action="recipe-list.html">
+            <form action="recipe-list.html" id="recipe-creator">
             <h2>New Recipe</h2>
             <div class="add-recipe-card tstyle">
                 <div class="add-recipe-lhs">
                     <ul>
                         <li>
                             <label for="title">Recipe Title:</label>
-                            <input type="text" id="title" placeholder="Enter recipe title"/>
+                            <textarea placeholder="Enter recipe title" name="RecipeTitle" id="title" onkeyup="countChars(this, 'char')"></textarea>
+                            <p id="char" class="char">0 characters (Max 50)</p>
                         </li>
-                        <li>
+                        <!-- <li>
                             <label for="time">Time To Make:</label>
-                            <input type="text" id="time" placeholder="Enter Time to Make"/>
-                        </li>
+                            <input type="text" id="time" placeholder="Enter Time to Make" name="time"/>
+                        </li> -->
                         <li>
                             <label for="difficulty">Difficulty</label>
-                            <select id="difficulty" placeholder="Enter recipe Difficulty">
-                                <option value="">Please choose an option</option>
+                            <select id="difficulty" name="Difficulty">
                                 <option value="easy">Easy</option>
                                 <option value="medium">Medium</option>
                                 <option value="hard">Hard</option>
                             </select>
                         </li>
-                        <li>
+                        <!-- <li>
                             <label for="upload-recipe-image" class="upload-recipe-image">Upload Recipe Image</label>
                             <input type="file" name="upload-recipe-image" id="upload-recipe-image"/>
-                        </li>
-                        <li>
+                        </li> -->
+                        <!-- <li>
                             <img src="images/food-default.png" alt="food-image" class="food-image">
-                        </li>
+                        </li> -->
                       
                         
                     </ul>
@@ -49,16 +50,19 @@
                 <div class="add-recipe-rhs">
                     <ul>
                         <li>
-                            <label for="title">Recipe Description</label>
-                            <textarea name="description" id="description" cols="30" rows="10" placeholder="Write a description for your recipe..."></textarea>
+                            <label for="description">Recipe Description</label>
+                            <textarea name="description" id="description" cols="30" rows="10" placeholder="Write a description for your recipe..." onkeyup="countChars(this, 'char1')"></textarea>
+                            <p id="char1" class="char">0 characters</p>
                         </li>
                         <li>
-                            <label for="title">Recipe Instructions</label>
-                            <textarea name="instructions" id="instructions cols="30" rows="10" placeholder="Write down the instructions for your recipe..."></textarea>
+                            <label for="instructions">Recipe Instructions</label>
+                            <textarea name="instructions" id="instructions" cols="30" rows="10" placeholder="Write down the instructions for your recipe..." onkeyup="countChars(this, 'char2')"></textarea>
+                            <p id="char2" class="char">0 characters</p>
                         </li>
                         <li>
-                            <label for="">Recipe Ingredients</label>
-                            <textarea name="ingredients" id="ingredients" cols="30" rows="10" placeholder="List the ingredients for your recipe..."></textarea> 
+                            <label for="ingredients">Recipe Ingredients</label>
+                            <textarea name="ingredients" id="ingredients" cols="30" rows="10" placeholder="List the ingredients for your recipe..." onkeyup="countChars(this, 'char3')"></textarea>
+                            <p id="char3" class="char">0 characters</p>
                         </li>
                       
                         
@@ -72,6 +76,8 @@
                     </ul>
                 </div>
                 </div>  
+                </form>
         </div> 
+        <script src="js/recipeCreatorListener.js"></script>
 </body>
 </html>
