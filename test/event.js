@@ -1,1 +1,0 @@
-document.getElementById("calculator").addEventListener("submit", calculateResult, false);
