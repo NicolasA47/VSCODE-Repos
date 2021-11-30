@@ -7,8 +7,11 @@ const teaFlavourSchema = new Schema ({
     flavour: String,
     caffeineLevel: String,
     imagePath: String,
-});
+    link: String,
+    price: String,
+    tastes: String
+  });
         
-const teaFlavour = mongoose.model ( "teaFlavour", teaFlavourSchema);
+  const teaFlavour = mongoose.model ( "teaFlavour", teaFlavourSchema);
 
 module.exports = teaFlavour;
