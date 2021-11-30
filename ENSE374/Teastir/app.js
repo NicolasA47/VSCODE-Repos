@@ -9,7 +9,7 @@ const app = express();
 const url = 'mongodb://localhost:27017/teaStir';
 const port = 2000; 
 
-let surveyResults = new surveyData({
+let surveyResults = new surveyData({    //test object for survey data
     caffeineLevels: [
         {name: "none", rating: 1},{name: "low", rating: 1}, {name: "medium", rating: 3}, {name: "high", rating: 4}
     ],
